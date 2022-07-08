@@ -1,6 +1,7 @@
 :root {
   --bg-main: hsl(30, 38%, 92%);
   --clr-primary: hsl(158, 36%, 37%);
+  --clr-hover: hsl(157, 57%, 15%);
   --clr-heading: hsl(212, 21%, 14%);
   --clr-body: hsl(228, 12%, 48%);
   --clr-neutral: hsl(0, 0%, 100%);
@@ -29,6 +30,7 @@ body {
 
 img {
   max-width: 100%;
+  display: block;
 }
 
 main {
@@ -37,6 +39,7 @@ main {
 
 .card {
   width: 90%;
+  max-width: 600px;
   margin: 0 auto;
   background-color: var(--clr-neutral);
   border-radius: 10px;
@@ -88,4 +91,32 @@ p {
   border: 0;
   border-radius: 5px;
   font-weight: 700;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--clr-hover);
+}
+
+@media (min-width: 500px) {
+  .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+  }
+
+  .card-img {
+    width: 50%;
+    height: 100%;
+  }
+
+  .product-img {
+    object-fit: cover;
+  }
+
+  .card-content {
+    width: 50%;
+  }
 }
