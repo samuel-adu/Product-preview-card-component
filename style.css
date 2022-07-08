@@ -92,11 +92,18 @@ p {
   border-radius: 5px;
   font-weight: 700;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn:hover,
 .btn:focus {
   background-color: var(--clr-hover);
+}
+
+.cart-icon {
+  margin-right: 0.25em;
 }
 
 @media (min-width: 500px) {
