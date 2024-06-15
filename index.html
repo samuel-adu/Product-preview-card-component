@@ -20,26 +20,26 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="card">
-      <div class="card-img">
-        <picture>
+    <main class="card">
+      <div class="card_image">
+        <picture class="card__image">
           <source
-            media="(min-width: 500px)"
+            media="(min-width: 640px)"
             srcset="/images/image-product-desktop.jpg"
-            class="product-img"
+            class="card__image"
           />
           <img
             src="./images/image-product-mobile.jpg"
             alt=""
-            class="product-img"
+            class="product-image"
           />
         </picture>
       </div>
 
-      <main class="card-content">
+      <div class="card__content">
         <p class="lead">Perfume</p>
-        <h1>Gabrielle Essence Eau De Parfum</h1>
-        <p>
+        <h1 class="card__heading">Gabrielle Essence Eau De Parfum</h1>
+        <p class="card__text">
           A floral, solar and voluptuous interpretation composed by Olivier
           Polge, Perfumer-Creator for the House of CHANEL.
         </p>
@@ -53,7 +53,14 @@
           <img src="./images/icon-cart.svg" alt="" class="cart-icon" />
           Add to Cart
         </button>
-      </main>
-    </div>
+      </div>
+    </main>
+
+    <aside class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://www.samueladu.dev">Samuel Adu</a>.
+    </aside>
   </body>
 </html>
